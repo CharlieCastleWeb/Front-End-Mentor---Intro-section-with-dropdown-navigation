@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- styles -->
   <link rel="stylesheet" href="./styles/css/main.css">
 </head>
 <body>
@@ -26,22 +33,28 @@
     </nav>
   </header>  
 
+  <img src="./images/image-hero-mobile.png" alt="Hero image" class="hero-image">
+  
   <main>
-    <img src="./images/image-hero-mobile.png" alt="Hero image" class="hero-image">
 
     <h1>Make remote work</h1>
 
     <p>Get your team in sync, no matter your location. Streamline processes, 
       create team rituals, and watch productivity soar.</p>
 
-    <a href="#">Learn more</a>
+    <a href="#" class="learn-more-button">Learn more</a>
 
-    
+    <div class="clients">
+      <img src="./images/client-databiz.svg" alt="Databiz logo">
+      <img src="./images/client-audiophile.svg" alt="Audiophile logo">
+      <img src="./images/client-meet.svg" alt="Meet logo">
+      <img src="./images/client-maker.svg" alt="Maker logo">
+    </div>
   </main>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://carloscastillo.dev/">Carlos Castillo</a>.
   </footer>
 </body>
 </html>

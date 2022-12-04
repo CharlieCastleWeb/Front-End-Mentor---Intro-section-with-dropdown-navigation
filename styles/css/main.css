@@ -1,6 +1,38 @@
 /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* VARIABLES */
 /* TYPOGRAPHY */
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  color: hsl(0deg, 0%, 8%);
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+main p {
+  color: hsl(0deg, 0%, 41%);
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.learn-more-button {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 98%);
+  font-size: 1rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -8,7 +40,69 @@
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
 }
 
 /* LAYOUT */
+body {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+header,
+main,
+footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+nav {
+  display: none;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 0.8em;
+}
+
+main p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.learn-more-button {
+  display: block;
+  margin-top: 2em;
+  background-color: hsl(0deg, 0%, 8%);
+  padding: 0.8em 0;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.clients {
+  margin-top: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients img {
+  width: 18%;
+}
+
+footer {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* MEDIA QUERIES *//*# sourceMappingURL=main.css.map */
