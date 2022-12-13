@@ -35,7 +35,8 @@ main p {
     line-height: 1.5em;
 }
 
-.mobile-nav a {
+.mobile-nav a,
+.mobile-nav li {
     color: $medium-gray;
     font-size: 0.9rem;
 }
@@ -107,7 +108,7 @@ a {
     min-height: 100vh;
     z-index: 3;
     background-color: $almost-white;
-    padding-top: 3em;
+    padding-top: 2.5em;
     transition: all ease-in-out 0.4s;
 }
 
@@ -116,9 +117,32 @@ a {
 }
 
 .mobile-nav li,
-.login,
-.register {
-    margin: 1.3em 1.5em;
+.login {
+    margin: 1.8em 1.5em;
+}
+
+.mobile-nav li img {
+    margin-left: 0.8em;
+}
+
+.dropdown-menu {
+    display: none;
+    margin-left: 1em;
+}
+
+.dropdown-menu li a{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu li img {
+    margin-right: 0.8em;
+    margin-left: 0em;
+    margin-bottom: 0.3em;
+}
+
+.display-block {
+    display: block;
 }
 
 .login,
@@ -132,25 +156,25 @@ a {
 
 .register {
     border: 2px solid $medium-gray;
+    margin: -0.5em 1.5em;
     padding: 0.7em 0;
     border-radius: 10px;
 }
 
 .overlay {
-    visibility: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
     z-index: 2;
 }
 
 .overlay.is-active {
    visibility: visible;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   background-color: rgba(0, 0, 0, 0.5);
    opacity: 1;
 }
 
