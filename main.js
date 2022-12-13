@@ -16,13 +16,9 @@ window.onload = function() {
 
     arrow_btn.forEach( (btn, i) => {
         btn.addEventListener("click", function() {
-            showDropDownMenu(i);
+            dropdown_menu[i].classList.toggle("display");
+            btn.classList.toggle("rotate");
         });
     });
-
-    
-    function showDropDownMenu(menu_number) {
-        dropdown_menu[menu_number].classList.toggle("display-block");
-    }
 
 }

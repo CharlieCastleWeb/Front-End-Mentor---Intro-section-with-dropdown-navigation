@@ -114,11 +114,16 @@ a {
 
 .mobile-nav li img {
   margin-left: 0.8em;
+  transition: all ease-in-out 0.4s;
 }
 
 .dropdown-menu {
-  display: none;
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  margin-top: -1.4em;
   margin-left: 1em;
+  transition: all ease-in-out 0.4s;
 }
 
 .dropdown-menu li a {
@@ -132,8 +137,14 @@ a {
   margin-bottom: 0.3em;
 }
 
-.display-block {
-  display: block;
+.dropdown-menu.display {
+  max-height: 500px;
+  margin-top: 1.4em;
+  opacity: 1;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 .login,
