@@ -229,7 +229,6 @@ main p {
 
 .learn-more-button {
   display: block;
-  margin-top: 2em;
   background-color: hsl(0deg, 0%, 8%);
   padding: 0.8em 0;
   width: 40%;
@@ -255,4 +254,51 @@ footer {
   transform: translateX(-50%);
 }
 
-/* MEDIA QUERIES *//*# sourceMappingURL=main.css.map */
+/* MEDIA QUERIES */
+@media (min-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 78%;
+    margin: 0 auto;
+    border: 1px solid red;
+    height: 75vh;
+    margin-top: 2em;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    margin: 0;
+  }
+  main h1,
+main p {
+    text-align: left;
+  }
+  main h1 {
+    margin-top: auto;
+    font-size: 4.8rem;
+  }
+  main p,
+main a {
+    font-size: 1.3rem;
+  }
+  main p {
+    margin-top: 2em;
+  }
+  .learn-more-button {
+    margin-left: 0;
+    margin-top: 1.5em;
+    width: 30%;
+    padding: 1em 0;
+  }
+  .clients {
+    margin-top: auto;
+  }
+  .hero-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
