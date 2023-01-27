@@ -68,14 +68,10 @@ footer {
 
 header {
   padding-top: 1em;
-  padding-bottom: 0.7em;
+  padding-bottom: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
-.logo {
-  padding-bottom: 0.2em;
 }
 
 nav {
@@ -219,12 +215,13 @@ a {
 }
 
 h1 {
-  margin-top: 0.8em;
+  margin-top: 1.5em;
 }
 
 main p {
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
+  line-height: 1.7rem;
 }
 
 .learn-more-button {
@@ -237,7 +234,7 @@ main p {
 }
 
 .clients {
-  margin-top: 1.8em;
+  margin-top: 2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -262,9 +259,32 @@ footer {
     justify-content: space-between;
     width: 78%;
     margin: 0 auto;
-    border: 1px solid red;
     height: 75vh;
     margin-top: 2em;
+  }
+  header {
+    justify-content: flex-start;
+  }
+  .mobile-nav {
+    position: static;
+    width: auto;
+    min-height: auto;
+    display: flex;
+    width: 100%;
+  }
+  .mobile-nav ul {
+    display: flex;
+  }
+  .login {
+    display: block;
+    margin-left: auto;
+  }
+  .dropdown-menu.display {
+    display: none;
+  }
+  .burger,
+.overlay {
+    display: none;
   }
   main {
     display: flex;

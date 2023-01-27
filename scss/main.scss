@@ -77,14 +77,10 @@ footer {
 
 header {
     padding-top: 1em;
-    padding-bottom: 0.7em;
+    padding-bottom: 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-}
-
-.logo {
-    padding-bottom: 0.2em;
 }
 
 nav {
@@ -229,12 +225,13 @@ a {
 }
 
 h1 {
-    margin-top: 0.8em;
+    margin-top: 1.5em;
 }
 
 main p {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
+    line-height: 1.7rem;
 }
 
 .learn-more-button {
@@ -247,7 +244,7 @@ main p {
 }
 
 .clients {
-    margin-top: 1.8em;
+    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -274,11 +271,59 @@ footer {
         justify-content: space-between;
         width: 78%;
         margin: 0 auto;
-        border: 1px solid red;
         height: 75vh;
         margin-top: 2em;
     }
-    
+
+    header {
+        justify-content: flex-start;
+
+        // padding-top: 1em;
+        // padding-bottom: 1.5em;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: baseline;
+    }
+
+    .mobile-nav {
+        position: static;
+        width: auto;
+        min-height: auto;
+        display: flex;
+        width: 100%;
+        
+        // display: block;
+        // position: fixed;
+        // top: 0;
+        // right: -100%;
+        // width: 70%;
+        // min-height: 100vh;
+        // z-index: 3;
+        // background-color: $almost-white;
+        // padding-top: 2.5em;
+        // transition: all ease-in-out 0.4s;
+    }
+
+
+
+    .mobile-nav ul {
+        display: flex;
+    }
+
+    .login {
+        display: block;
+        margin-left: auto;
+    }
+
+    .dropdown-menu.display {
+        display: none;       ////// Revisar para añadir los dropdowns
+    }
+
+    .burger,
+    .overlay {
+        display: none;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -311,13 +356,6 @@ footer {
         margin-top: 1.5em;
         width: 30%;
         padding: 1em 0;
-
-    //     display: block;
-    // background-color: $almost-black;
-    // padding: 0.8em 0;
-    // width: 40%;
-    // margin: 0 auto;
-    // border-radius: 12px;
     }
 
     .clients {
