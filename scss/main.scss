@@ -355,6 +355,16 @@ footer {
         margin: 0;
     }
     
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hero-image {
+        max-width: 100%;
+        object-fit: contain;
+    }
+
     main h1,
     main p{
       text-align: left; 
