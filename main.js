@@ -2,7 +2,7 @@
 window.onload = function() {
     
     const menu_btn = document.querySelector(".burger");
-    const mobile_menu = document.querySelector(".mobile-nav");
+    const mobile_menu = document.querySelector("nav");
     const overlay = document.querySelector(".overlay");
     
     const dropdown_li = document.querySelectorAll(".dropdown-li");

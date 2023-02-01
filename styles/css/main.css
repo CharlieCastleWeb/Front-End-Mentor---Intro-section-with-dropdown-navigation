@@ -27,8 +27,8 @@ main p {
   line-height: 1.5em;
 }
 
-.mobile-nav a,
-.mobile-nav li {
+nav a,
+nav li {
   color: hsl(0deg, 0%, 41%);
   font-size: 0.9rem;
 }
@@ -86,7 +86,7 @@ a {
   text-decoration: none;
 }
 
-.mobile-nav {
+nav {
   display: block;
   position: fixed;
   top: 0;
@@ -99,16 +99,16 @@ a {
   transition: all ease-in-out 0.4s;
 }
 
-.mobile-nav.is-active {
+nav.is-active {
   right: 0;
 }
 
-.mobile-nav li,
+nav li,
 .login {
   margin: 1.8em 1.5em;
 }
 
-.mobile-nav li img {
+nav li img {
   margin-left: 0.8em;
   transition: all ease-in-out 0.4s;
 }
@@ -270,7 +270,7 @@ footer {
   header img, nav {
     margin: auto 0;
   }
-  .mobile-nav {
+  nav {
     position: static;
     width: auto;
     min-height: auto;
@@ -278,10 +278,10 @@ footer {
     width: 100%;
     padding-top: 0;
   }
-  .mobile-nav ul {
+  nav ul {
     display: flex;
   }
-  .mobile-nav li,
+  nav li,
 .login {
     margin: 0em 1.5em;
     cursor: pointer;
@@ -312,34 +312,6 @@ footer {
   .dropdown-menu li:nth-child(1) {
     margin-top: 0;
   }
-  /*
-  .dropdown-menu {
-  display: block;
-  max-height: 0;
-  opacity: 0;
-  margin-top: -1.4em;
-  margin-left: 1em;
-  transition: all ease-in-out 0.4s;
-  }
-
-  .dropdown-menu li a{
-      display: flex;
-      align-items: center;
-  }
-
-  .dropdown-menu li img {
-      margin-right: 0.8em;
-      margin-left: 0em;
-      margin-bottom: 0.3em;
-  }
-
-  .dropdown-menu.display {
-      max-height: 500px;
-      margin-top: 1.4em;
-      opacity: 1;
-  }
-
-  */
   .register {
     padding: 0.7em 1.2em;
   }
