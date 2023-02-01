@@ -5,6 +5,7 @@ window.onload = function() {
     const mobile_menu = document.querySelector(".mobile-nav");
     const overlay = document.querySelector(".overlay");
     
+    const dropdown_li = document.querySelectorAll(".dropdown-li");
     const arrow_btn = document.querySelectorAll(".dropdown-arrow");
     const dropdown_menu = document.querySelectorAll(".dropdown-menu");
 
@@ -14,10 +15,10 @@ window.onload = function() {
         overlay.classList.toggle("is-active");
     });
 
-    arrow_btn.forEach( (btn, i) => {
+    dropdown_li.forEach( (btn, i) => {
         btn.addEventListener("click", function() {
             dropdown_menu[i].classList.toggle("display");
-            btn.classList.toggle("rotate");
+            arrow_btn[i].classList.toggle("rotate");
         });
     });
 

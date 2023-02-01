@@ -261,6 +261,7 @@ footer {
     margin: 0 auto;
     height: 75vh;
     margin-top: 2em;
+    z-index: 0;
   }
   header {
     justify-content: flex-start;
@@ -275,12 +276,67 @@ footer {
   .mobile-nav ul {
     display: flex;
   }
+  .mobile-nav li,
+.login {
+    margin: 0em 1.5em;
+    cursor: pointer;
+  }
   .login {
     display: block;
     margin-left: auto;
   }
+  .dropdown-menu {
+    display: none !important;
+    position: absolute;
+    padding: 1.5em 0.5em;
+    margin-top: 2em;
+    margin-left: -6.5em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 10px;
+  }
+  .dropdown-menu.first-dropdown {
+    margin-left: -10em;
+  }
   .dropdown-menu.display {
-    display: none;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .dropdown-menu li {
+    margin-top: 1em;
+  }
+  .dropdown-menu li:nth-child(1) {
+    margin-top: 0;
+  }
+  /*
+  .dropdown-menu {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  margin-top: -1.4em;
+  margin-left: 1em;
+  transition: all ease-in-out 0.4s;
+  }
+
+  .dropdown-menu li a{
+      display: flex;
+      align-items: center;
+  }
+
+  .dropdown-menu li img {
+      margin-right: 0.8em;
+      margin-left: 0em;
+      margin-bottom: 0.3em;
+  }
+
+  .dropdown-menu.display {
+      max-height: 500px;
+      margin-top: 1.4em;
+      opacity: 1;
+  }
+
+  */
+  .register {
+    padding: 0.7em 1.2em;
   }
   .burger,
 .overlay {
