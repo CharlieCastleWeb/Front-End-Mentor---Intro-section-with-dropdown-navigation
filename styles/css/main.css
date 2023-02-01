@@ -265,6 +265,10 @@ footer {
   }
   header {
     justify-content: flex-start;
+    padding-top: 2.5em;
+  }
+  header img, nav {
+    margin: auto 0;
   }
   .mobile-nav {
     position: static;
@@ -272,6 +276,7 @@ footer {
     min-height: auto;
     display: flex;
     width: 100%;
+    padding-top: 0;
   }
   .mobile-nav ul {
     display: flex;
